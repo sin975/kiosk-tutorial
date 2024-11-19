@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키오스크 실습 - 메뉴 선택</title>
+    <link rel="stylesheet" href="style.css"> <!-- 스타일 연결 -->
+</head>
+<body>
+    <header>
+        <h1>키오스크 실습 - 메뉴 선택</h1>
+    </header>
+    <main>
+        <div class="kiosk-screen">
+            <h2>메뉴를 선택하세요</h2>
+            <div class="menu-options">
+                <!-- 각 버튼은 JavaScript 함수 호출 -->
+                <button onclick="selectItem('커피')">커피</button>
+                <button onclick="selectItem('차')">차</button>
+                <button onclick="selectItem('주스')">주스</button>
+            </div>
+            <div id="selected-item" class="selected-item">
+                선택한 메뉴: 없음
+            </div>
+            <button onclick="goToPayment()" class="next-button">다음으로 이동</button>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 키오스크 튜토리얼. 모든 권리 보유.
+    </footer>
+    <script src="practice1.js"></script> <!-- JavaScript 연결 -->
+</body>
+</html>
